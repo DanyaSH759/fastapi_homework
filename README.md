@@ -1,2 +1,2 @@
 # fastapi_homework
-FastApi homework DevOps
+FastAPI homework DevOps
