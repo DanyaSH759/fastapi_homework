@@ -61,7 +61,7 @@ def root():
             
             "Измененеи данных о собаке по id": ["http://127.0.0.1:8000/dog_change_id?id=4&name=...&kind=...",
                                                 "https://fastapi-homework-uqmi.onrender.com/dog_change_id?id=4&name=...&kind=..."],
-            }]
+            }
 
 # ваш код здесь
 
