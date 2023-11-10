@@ -45,7 +45,8 @@ post_db = [
 @app.get('/')
 def root():
     # ваш код здесь
-    return {"message": "Homework FastApi",
+    return "Вместо http://127.0.0.1:8000 используем https://fastapi-homework-uqmi.onrender.com , если сервер не упал.",
+            {"message": "Homework FastApi",
             "...": "Необходимо указать данные",
             "Добавление новой собаки": "http://127.0.0.1:8000/dog_add?name=...&kind=...",
             "Список всех собак": "http://127.0.0.1:8000/dog_list",
