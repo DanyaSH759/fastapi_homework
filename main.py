@@ -45,14 +45,22 @@ post_db = [
 @app.get('/')
 def root():
     # ваш код здесь
-    return ["Вместо http://127.0.0.1:8000 используем https://fastapi-homework-uqmi.onrender.com , если сервер не упал.",
-            {"message": "Homework FastApi",
+    return {"message": "Homework FastApi",
             "...": "Необходимо указать данные",
-            "Добавление новой собаки": "http://127.0.0.1:8000/dog_add?name=...&kind=...",
-            "Список всех собак": "http://127.0.0.1:8000/dog_list",
-            "Поиск собаки по id": "http://127.0.0.1:8000/dog_id?id=...",
-            "Поиск собак по породе": "http://127.0.0.1:8000/dog_kind?kind=...",
-            "Измененеи данных о собаке по id": "http://127.0.0.1:8000/dog_change_id?id=4&name=...&kind=..."
+            
+            "Добавление новой собаки": ["http://127.0.0.1:8000/dog_add?name=...&kind=..." , 
+                                        "https://fastapi-homework-uqmi.onrender.com/dog_add?name=...&kind=..."],
+            "Список всех собак": ["http://127.0.0.1:8000/dog_list",
+                                  "https://fastapi-homework-uqmi.onrender.com/dog_list"],
+                                  
+            "Поиск собаки по id": ["http://127.0.0.1:8000/dog_id?id=...",
+                                   "https://fastapi-homework-uqmi.onrender.com/dog_id?id=..."],
+            
+            "Поиск собак по породе": ["http://127.0.0.1:8000/dog_kind?kind=...", 
+                                      "https://fastapi-homework-uqmi.onrender.com/dog_kind?kind=..."],
+            
+            "Измененеи данных о собаке по id": ["http://127.0.0.1:8000/dog_change_id?id=4&name=...&kind=...",
+                                                "https://fastapi-homework-uqmi.onrender.com/dog_change_id?id=4&name=...&kind=..."],
             }]
 
 # ваш код здесь
